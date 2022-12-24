@@ -1,0 +1,348 @@
+html{
+    /* background: #000; */
+    background-image: url(../img/14.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100%;    
+}
+/*最外层容器样式*/
+.wrap{
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    /*改变左右上下,图片方块移动*/
+    
+}
+/*包裹所有容器样式*/
+.snapshot{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-80deg);
+    -webkit-animation: rotate 20s infinite;
+    /*匀速*/
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate{
+    from{transform: rotateX(0deg) rotateY(0deg);}
+    to{transform: rotateX(360deg) rotateY(360deg);}
+}
+.snapshot div{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    opacity: 0.28;
+    transition: all .4s;
+}
+/*定义所有图片样式*/
+.pic{
+    width: 400px;
+    height: 400px;
+}
+.snapshot .out_front{
+    transform: rotateY(0deg) translateZ(200px);
+}
+.snapshot .out_back{
+    transform: translateZ(-200px) rotateY(180deg);
+}
+.snapshot .out_left{
+    transform: rotateY(90deg) translateZ(200px);
+}
+.snapshot .out_right{
+    transform: rotateY(-90deg) translateZ(200px);
+}
+.snapshot .out_top{
+    transform: rotateX(90deg) translateZ(200px);
+}
+.snapshot .out_bottom{
+    transform: rotateX(-90deg) translateZ(200px);
+}
+/*定义小正方体样式*/
+.snapshot span{
+    display: bloack;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.snapshot .in_pic{
+    width: 200px;
+    height: 200px;
+}
+.snapshot .in_front{
+    transform: rotateY(0deg) translateZ(100px);
+}
+.snapshot .in_back{
+    transform: translateZ(-100px) rotateY(180deg);
+}
+.snapshot .in_left{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.snapshot .in_right{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.snapshot .in_top{
+    transform: rotateX(90deg) translateZ(100px);
+}
+.snapshot .in_bottom{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+/*鼠标移入后样式*/
+.snapshot:hover .out_front{
+    transform: rotateY(0deg) translateZ(300px);
+    opacity: 0.86;
+}
+.snapshot:hover .out_back{
+    transform: translateZ(-300px) rotateY(180deg);
+    opacity: 0.86;
+}
+.snapshot:hover .out_left{
+    transform: rotateY(90deg) translateZ(300px);
+    opacity: 0.86;
+}
+.snapshot:hover .out_right{
+    transform: rotateY(-90deg) translateZ(300px);
+    opacity: 0.86;
+}
+.snapshot:hover .out_top{
+    transform: rotateX(90deg) translateZ(300px);
+    opacity: 0.86;
+}
+.snapshot:hover .out_bottom{
+    transform: rotateX(-90deg) translateZ(300px);
+    opacity: 0.86;
+}
+
+
+/*最外层容器样式*/
+.wrap1{
+    position: relative;
+    position: absolute;
+    top: 66%;
+    right: 0;
+    bottom: 0;
+    left: 54%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    /*改变左右上下,图片方块移动*/
+    
+}
+/*包裹所有容器样式*/
+.snapshot1{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-80deg);
+    -webkit-animation: rotate 12s infinite;
+    /*匀速*/
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate{
+    from{transform: rotateX(0deg) rotateY(0deg);}
+    to{transform: rotateX(360deg) rotateY(360deg);}
+}
+.snapshot1 div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.9;
+    /* transition: all .2s; */
+    /* transition: width 2s; */
+    transition: all 2s;
+}
+/*定义所有图片样式*/
+.pic1{
+    width: 200px;
+    height: 200px;
+}
+.snapshot1 .out_front1{
+    transform: rotateY(0deg) translateZ(100px);
+}
+.snapshot1 .out_back1{
+    transform: translateZ(-100px) rotateY(180deg);
+}
+.snapshot1 .out_left1{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.snapshot1 .out_right1{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.snapshot1 .out_top1{
+    transform: rotateX(90deg) translateZ(100px);
+}
+.snapshot1 .out_bottom1{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+/*定义小正方体样式*/
+.snapshot1 span{
+    display: bloack;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.snapshot1 .in_pic1{
+    width: 100px;
+    height: 100px;
+}
+.snapshot1 .in_front1{
+    transform: rotateY(0deg) translateZ(50px);
+}
+.snapshot1 .in_back1{
+    transform: translateZ(-50px) rotateY(180deg);
+}
+.snapshot1 .in_left1{
+    transform: rotateY(90deg) translateZ(50px);
+}
+.snapshot1 .in_right1{
+    transform: rotateY(-90deg) translateZ(50px);
+}
+.snapshot1 .in_top1{
+    transform: rotateX(90deg) translateZ(50px);
+}
+.snapshot1 .in_bottom1{
+    transform: rotateX(-90deg) translateZ(50px);
+}
+/*鼠标移入后样式*/
+.snapshot1:hover .out_front1{
+    transform: rotateY(0deg) translateZ(200px);
+}
+.snapshot1:hover .out_back1{
+    transform: translateZ(-200px) rotateY(180deg);
+}
+.snapshot1:hover .out_left1{
+    transform: rotateY(90deg) translateZ(200px);
+}
+.snapshot1:hover .out_right1{
+    transform: rotateY(-90deg) translateZ(200px);
+}
+.snapshot1:hover .out_top1{
+    transform: rotateX(90deg) translateZ(200px);
+}
+.snapshot1:hover .out_bottom1{
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+
+/*最外层容器样式*/
+.wrap2{
+    position: relative;
+    position: absolute;
+    top: 66%;
+    right: 60%;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    /*改变左右上下,图片方块移动*/
+    
+}
+/*包裹所有容器样式*/
+.snapshot2{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-80deg);
+    -webkit-animation: rotate 16s infinite;
+    /*匀速*/
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate{
+    from{transform: rotateX(0deg) rotateY(0deg);}
+    to{transform: rotateX(360deg) rotateY(360deg);}
+}
+.snapshot2 div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.9;
+    /* transition: all .2s; */
+    /* transition: width 2s; */
+    transition: all 2s;
+}
+/*定义所有图片样式*/
+.pic2{
+    width: 200px;
+    height: 200px;
+}
+.snapshot2 .out_front2{
+    transform: rotateY(0deg) translateZ(130px);
+}
+.snapshot2 .out_back2{
+    transform: translateZ(-130px) rotateY(180deg);
+}
+.snapshot2 .out_left2{
+    transform: rotateY(90deg) translateZ(130px);
+}
+.snapshot2 .out_right2{
+    transform: rotateY(-90deg) translateZ(130px);
+}
+.snapshot2 .out_top2{
+    transform: rotateX(90deg) translateZ(130px);
+}
+.snapshot2 .out_bottom2{
+    transform: rotateX(-90deg) translateZ(130px);
+}
+/*定义小正方体样式*/
+.snapshot2 span{
+    display: bloack;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.snapshot2 .in_pic2{
+    width: 100px;
+    height: 100px;
+}
+.snapshot2 .in_front2{
+    transform: rotateY(0deg) translateZ(50px);
+}
+.snapshot2 .in_back2{
+    transform: translateZ(-50px) rotateY(180deg);
+}
+.snapshot2 .in_left2{
+    transform: rotateY(90deg) translateZ(50px);
+}
+.snapshot2 .in_right2{
+    transform: rotateY(-90deg) translateZ(50px);
+}
+.snapshot2 .in_top2{
+    transform: rotateX(90deg) translateZ(50px);
+}
+.snapshot2 .in_bottom2{
+    transform: rotateX(-90deg) translateZ(50px);
+}
+/*鼠标移入后样式*/
+.snapshot2:hover .out_front2{
+    transform: rotateY(0deg) translateZ(180px);
+}
+.snapshot2:hover .out_back2{
+    transform: translateZ(-180px) rotateY(180deg);
+}
+.snapshot2:hover .out_left2{
+    transform: rotateY(90deg) translateZ(180px);
+}
+.snapshot2:hover .out_right2{
+    transform: rotateY(-90deg) translateZ(180px);
+}
+.snapshot2:hover .out_top2{
+    transform: rotateX(90deg) translateZ(180px);
+}
+.snapshot2:hover .out_bottom2{
+    transform: rotateX(-90deg) translateZ(180px);
+}
